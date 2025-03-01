@@ -74,6 +74,9 @@ python main.py --audio-url https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2
 
 # Run a high-concurrency benchmark to simulate production load
 python main.py --audio-asset winning_call --simulate --concurrency 100 --requests 200 --output benchmark.txt
+
+# Note: 
+When running benchmarks with high concurrency settings, all output texts from the individual requests will be automatically saved. For example, if you specify --output benchmark.json, the benchmark metrics will be saved to that file, and all the individual text outputs will be saved in a directory called benchmark_results/ with files named output_1.txt, output_2.txt, etc.
 ```
 
 
