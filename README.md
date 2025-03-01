@@ -40,11 +40,14 @@ vllm serve Qwen/Qwen2-Audio-7B-Instruct \
 ```bash
 # Navigate to the pipeline directory
 1. Clone this repository. 
-2. cd wform
+2. cd audio_llm/src
 
 # Install Dependencies
 pip install vllm[audio] 
 pip install flashinfer-python -i https://flashinfer.ai/whl/cu124/torch2.5
+
+# set ENV for Faster model download from Huggingface.
+export HF_TRANSFER = 1
 
 # Launch the backend server
 vllm serve Qwen/Qwen2-Audio-7B-Instruct \
