@@ -62,7 +62,7 @@ The client code is split into separate modules:
 - **`main.py`**: Entry point for both single request and simulation modes.
 
 ### Asynchronous Communication
-Uses Python's `asyncio` and the asynchronous version of the OpenAPI client to send requests concurrently. This ensures high throughput and non-blocking I/O.
+Uses Python's `asyncio` and the asynchronous version of the OpenAI client to send requests concurrently. This ensures high throughput and non-blocking I/O.
 
 ### API Design
 The client communicates with the server over HTTP, sending structured JSON payloads. The payload contains:
